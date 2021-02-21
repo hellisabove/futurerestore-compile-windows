@@ -21,7 +21,7 @@ set -e
 
 #probably more packages than actually needed, but eh, better safe then sorry
 pacman -S --needed --noconfirm mingw-w64-x86_64-clang mingw-w64-x86_64-libzip mingw-w64-x86_64-brotli mingw-w64-x86_64-libpng mingw-w64-x86_64-python mingw-w64-x86_64-libunistring mingw-w64-x86_64-curl mingw-w64-x86_64-cython mingw-w64-x86_64-pkg-config
-pacman -S --needed --noconfirm make automake autoconf cmake pkg-config openssl libtool m4 libidn2 git libunistring libunistring-devel python cython python-devel
+pacman -S --needed --noconfirm make automake autoconf cmake gcc pkg-config openssl libtool m4 libidn2 git libunistring libunistring-devel python cython python-devel
 
 export CC=gcc
 export CXX=g++
